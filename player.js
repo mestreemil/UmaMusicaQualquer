@@ -38,15 +38,13 @@ player.ontimeupdate = function () {
     let ct = player.currentTime;
     current.innerHTML = timeFormat(ct);
     let duration = player.duration;
+
     if (ct == duration) {
-        if (nummusic >= 0 && nummusic < 14) {
-            nummusic = nummusic + 1
+        nummusic = Number(nummusic) + 1
+        localStorage.setItem('nummusic', nummusic)
+        setTimeout(function () {
             window.location.reload()
-        }
-        if (nummusic == 14) {
-            nummusic = 0
-            window.location.reload()
-        }
+        }, 1);
     }
 }
 
