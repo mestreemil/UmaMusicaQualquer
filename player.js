@@ -8,7 +8,7 @@ var nomedamusicaD = document.getElementById("nomedamusicaDireita")
 var imagem = document.getElementById("img")
 var imagemE = document.getElementById("imgE")
 var imagemD = document.getElementById("imgD")
-if (localStorage.getItem('nummusic') === null) {
+if (localStorage.getItem('nummusic') === null || localStorage.getItem('nummusic') < 0 || localStorage.getItem('nummusic') > 14) {
     var nummusic = 0
 } else {
     var nummusic = localStorage.getItem("nummusic")
@@ -39,7 +39,14 @@ player.ontimeupdate = function () {
     current.innerHTML = timeFormat(ct);
     let duration = player.duration;
     if (ct == duration) {
-        nummusic = nummusic + 1
+        if (nummusic >= 0 && nummusic < 14) {
+            nummusic = nummusic + 1
+            window.location.reload()
+        }
+        if (nummusic == 14) {
+            nummusic = 0
+            window.location.reload()
+        }
     }
 }
 
