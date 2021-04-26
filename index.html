@@ -15,7 +15,10 @@
 </head>
 
 <body>
-
+    <div class="lateral">
+        <img id="imgE">
+        <div id="nomedamusicaEsquerda"></div>
+    </div>
     <main>
         <h1>Uma Música Qualquer</h1>
         <br>
@@ -33,7 +36,8 @@
                     </div>
                 </div>
                 <div class="control">
-                    <i class="fas fa-sync-alt" id="recarregar" onclick="recarregar()"></i>
+                    <i class="fas fa-arrow-left" id="voltar" onclick="voltar()"></i>
+                    <i class="fas fa-arrow-right" id="passar" onclick="passar()"></i>
                 </div>
                 <br>
                 <div id="current">0:00</div>
@@ -42,6 +46,10 @@
         <br>
         <p>By: Ranyer Emil</p>
     </main>
+    <div class="lateral">
+        <img id="imgD">
+        <div id="nomedamusicaDireita"></div>
+    </div>
     <script src="player.js"></script>
 </body>
 

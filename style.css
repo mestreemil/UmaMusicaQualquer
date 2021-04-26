@@ -39,12 +39,27 @@ main {
     border-radius: 20px;
 }
 
+.lateral {
+    background-color: white;
+    width: 15%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#nomedamusicaEsquerda,
+#nomedamusicaDireita {
+    color: white;
+    background-color: #47257A;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 100%;
 }
-
 
 #coisas {
     text-align: center;
@@ -74,7 +89,8 @@ img {
 }
 
 #playbtn,
-#recarregar {
+#voltar,
+#passar {
     font-size: 1.5em;
     color: transparent;
     -webkit-text-stroke-width: 1px;
@@ -83,7 +99,8 @@ img {
 }
 
 #playbtn:hover,
-#recarregar:hover {
+#voltar:hover,
+#passar:hover {
     -webkit-text-fill-color: white;
 }
 
@@ -116,16 +133,28 @@ img {
     main {
         width: 70%;
     }
+
+    .lateral {
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 450px) {
     main {
         width: 90%;
     }
+
+    .lateral {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 330px) {
     main {
         width: 100%;
+    }
+
+    .lateral {
+        width: 80%;
     }
 }
