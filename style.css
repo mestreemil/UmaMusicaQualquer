@@ -155,13 +155,10 @@ img {
     .info {
         font-size: 0.5em;
     }
-
-
 }
 
 @media only screen and (max-width: 750px) {
     .lateral {
         display: none;
     }
-
 }
