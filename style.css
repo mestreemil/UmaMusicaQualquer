@@ -131,30 +131,37 @@ img {
 
 @media only screen and (max-width: 1000px) {
     main {
-        width: 70%;
-    }
-
-    .lateral {
-        width: 30%;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    main {
-        width: 90%;
-    }
-
-    .lateral {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 330px) {
-    main {
-        width: 100%;
-    }
-
-    .lateral {
         width: 60%;
     }
+
+    .lateral {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.5em;
+    }
+
+    #playbtn,
+    #voltar,
+    #passar {
+        font-size: 0.7em;
+    }
+
+    .info {
+        font-size: 0.5em;
+    }
+
+
+}
+
+@media only screen and (max-width: 750px) {
+    .lateral {
+        display: none;
+    }
+
 }
